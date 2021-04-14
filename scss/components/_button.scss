@@ -1,0 +1,28 @@
+.cta {
+    color: $color-secondary;
+    font-family: $font-primary;
+    display: inline-block;
+    background-color: $color-primary;
+    border: .1rem solid $color-secondary;
+    padding: 1.6rem 3.2rem;
+    width: 60%;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 1;
+    transition: all .3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+
+    @media only screen and (min-width: 568px) {
+        width: 20rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+
+    &:hover {
+        background-color: $color-secondary;
+        color: $color-primary;
+    }
+}

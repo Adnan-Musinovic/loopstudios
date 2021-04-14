@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: $color-secondary;
+    font-family: $font-secondary;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-primary;
+    text-transform: uppercase;
+}
+
+/* HERO */
+
+.hero {
+    &--heading {
+        color: $color-primary;
+        font-family: $font-primary;
+        font-size: 3.2rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        line-height: 1.2;
+
+        @media only screen and (min-width: 1440px) {
+            font-size: 7.6rem;
+        }
+    }
+}
+
+/* ABOUT */
+
+.about {
+    & .grid {
+        &__item {
+            &--2 {
+                & h2 {
+                    margin-bottom: 2rem;
+
+                    @media only screen and (min-width: 1440px) {
+                        font-size: 4.2rem;
+                    }
+                }
+
+                & p {
+                    color: $color-quaternary;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+
+/* OUR CREATIONS */
+
+.our-creations {
+    & h3 {
+        color: $color-primary;
+        font-size: 2.6rem;
+    }
+
+    & h2 {
+        @media only screen and (min-width: 1440px) {
+            font-size: 4.2rem;
+        }
+    }
+}
+
+/* FOOTER */
+
+.footer {
+    color: $color-primary;
+}
